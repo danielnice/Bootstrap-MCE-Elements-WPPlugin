@@ -1,0 +1,299 @@
+@charset "utf-8";/**/
+html{
+	margin: 0;
+	width: 450px;
+}
+body{
+	padding: 0;
+	margin: 0;
+	width: 450px;
+	font-family: arial, sans-serif;
+	font-size: 12px;
+    background-color: #d8d8d8;
+    -webkit-tap-highlight-color: rgba(0,0,0,0)!important;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+.sbHolder {
+    outline: none !important;
+}
+.preview{
+  width: 410px;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px #c2c2c2 solid;
+}
+.preview .well{
+    margin: 0 !important;
+    line-height: 20px;
+}
+.preview-text{
+    border-top: 2px #f1f1f1 solid;
+    font-size: 16px;
+    font-weight: bold;
+    color: #373737;
+    padding: 8px 10px 14px 10px;
+}
+.inset{
+
+
+}
+.field{
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 3px;
+    border: 1px solid #9c9c9c;
+    box-shadow: 
+    0 2px 4px #fff, /*bottom external highlight*/
+    0 -2px 4px #ccc, /*top external shadow*/ 
+    inset 0 -1px 1px rgba(0,0,0,0.1), /*bottom internal shadow*/ 
+    inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+    font-weight: bold;
+    padding: 7px 8px;
+    color: #555;
+    margin: 5px;
+    float: left;
+    width: 200px;
+}
+a .field{
+    color: #aaa;
+    width: 100px;
+}
+a .field:hover{
+    cursor: pointer;
+    color: #555;
+}
+a .field:active{
+    cursor: pointer;
+    -moz-box-shadow: inset 0px 0px 8px #999;
+    -webkit-box-shadow: inset 0px 0px 8px #999;
+    box-shadow: inset 0px 0px 8px #999;
+}
+#text-btn{
+    width: 128px;
+}
+#btn-insert{
+    width: 60px;
+}
+#width-btn-contain{
+    position: absolute;
+    right: 10px;
+    top: 44px;
+}
+#tabs-content { 
+    clear: both; 
+    background-color: #d9d9d9;
+}
+form {  
+    background-color: #d9d9d9;
+    height: 226px;
+}
+.donate-wrap{
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+}
+#tabs-content.hide > div { display: none; }
+#tabs-content.hide > #tab-content-1 { display: block; }
+
+
+#tabs {
+    text-align: left;
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 0;
+    line-height: 24px;
+    height: 23px;
+    overflow: hidden;
+    font-size: 10px;
+    text-transform: uppercase;
+    position: relative;
+    color: #565656;
+}
+#tabs li {
+    border: 1px solid #AAA;
+    background: #D1D1D1;
+    background: -o-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+    background: -ms-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+    background: -moz-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+    background: -webkit-linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+    background: linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #f7f7f7;
+    margin: 0 -5px;
+    padding: 0 16px;
+    cursor: pointer;
+}
+#tabs a {
+	  color: #565656;
+	  text-decoration: none;
+}
+#tabs li.selected {
+    background: #f7f7f7;
+    color: #565656;
+    z-index: 2;
+    border-bottom-color: #f7f7f7;
+}
+#tabs:before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #AAA;
+    z-index: 1;
+}
+#tabs li:before,
+#tabs li:after {
+    border: 1px solid #AAA;
+    position: absolute;
+    bottom: -1px;
+    width: 5px;
+    height: 5px;
+    content: " ";
+}
+#tabs li:before {
+    left: -6px;
+    border-bottom-right-radius: 6px;
+    border-width: 0 1px 1px 0;
+    box-shadow: 2px 2px 0 #D1D1D1;
+}
+#tabs li:after {
+    right: -6px;
+    border-bottom-left-radius: 6px;
+    border-width: 0 0 1px 1px;
+    box-shadow: -2px 2px 0 #D1D1D1;
+}
+#tabs li.selected:before {
+    box-shadow: 2px 2px 0 #f7f7f7;
+}
+#tabs li.selected:after {
+    box-shadow: -2px 2px 0 #f7f7f7;
+}
+
+/*Select Boxes*/
+.sbHolder{
+    background-color: #e7e7e7;
+    border: solid 1px #515151;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    height: 26px;
+    position: relative;
+    width: 100px;
+
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #9c9c9c;
+    box-shadow: 
+    0 2px 4px #fff, /*bottom external highlight*/
+    0 -2px 4px #ccc, /*top external shadow*/ 
+    inset 0 -1px 1px rgba(0,0,0,0.1), /*bottom internal shadow*/ 
+    inset 0 1px 1px rgba(255,255,255,0.8); /*top internal highlight*/
+    font-weight: bold;
+    float: left;
+    margin: 5px;
+}
+.sbHolder:focus{
+        -moz-box-shadow: inset 0px 0px 8px #999;
+        -webkit-box-shadow: inset 0px 0px 8px #999;
+        box-shadow: inset 0px 0px 8px #999;
+        background-color: #efefef;
+}
+.sbSelector{
+    display: block;
+    height: 26px;
+    left: 0;
+    line-height: 26px;
+    outline: none;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 10px;
+    top: 0;
+    width: 74px;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+    color: #828282;
+    outline: none;
+    text-decoration: none;
+}
+.sbToggle{
+    background: url(sprite.png) 0 -0px no-repeat;
+    display: block;
+    height: 26px;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 26px;
+}
+.sbToggleOpen{
+    background: url(sprite.png) 0 -26px no-repeat;
+}
+.sbHolderDisabled{
+    background-color: #3C3C3C;
+    border: solid 1px #515151;
+}
+.sbHolderDisabled .sbHolder{
+    
+}
+.sbHolderDisabled .sbToggle{
+    
+}
+.sbOptions{
+    background-color: #fff;
+    border: solid 1px #9f9f9f;
+    border-radius: 3px;
+    list-style: none;
+    left: -1px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 29px !important;
+    width: 100px;
+    z-index: 1;
+    overflow-y: auto;
+}
+.sbOptions li{
+}
+.sbOptions a{
+    display: block;
+    outline: none;
+    padding: 3px 10px;
+}
+.sbOptions a:link, .sbOptions a:visited{
+    color: #373737;
+    text-decoration: none;
+}
+.sbOptions a:hover,
+.sbOptions a:focus,
+.sbOptions a.sbFocus{
+    color: #fff;
+    background-color: #444444;
+}
+.sbOptions li.last a{
+    border-bottom: none;
+}
+.sbOptions .sbDisabled{
+    border-bottom: dotted 1px #515151;
+    color: #999;
+    display: block;
+    padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+    border-bottom: dotted 1px #515151;
+    color: #EBB52D;
+    display: block;
+    font-weight: bold;
+    padding: 7px 0 7px 3px;
+}
+.sbOptions .sbSub{
+    padding-left: 17px;
+}
